@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Product preview card component</title>
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
+
 <body>
+  <main class="contenedor">
 
-  Preview
+    <div class="perfume">
 
-  Gabrielle Essence Eau De Parfum
+      <img class="perfume__imagen" src="/images/image-product-desktop.jpg"
+        alt="Imagen Perfume Gabrielle Essence Eau De Parfum 100ml">
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+      <div class="perfume__contenido">
 
-  $149.99
-  $169.99
+        <h1 class="color-fuente">Perfume</h1>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <h2>Gabrielle Essence Eau De Parfum</h2>
+
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="perfume__descripcion">
+          <p class="lg perfume__descripcion--precio"> $149.99</p>
+          <p class="sm perfume__descripcion--precio">$169.99</p>
+        </div><!--.perfume__descripcion-->
+
+        <div class="perfume__boton">
+
+          <img src="/images/icon-cart.svg" alt="">
+          <input class="perfume__submit" type="submit" value="Add to Cart">
+        </div> <!--.perfume__boton-->
+
+      </div><!--.perfume__contenido-->
+    </div><!--.perfume-->
+  </main> <!--main-->
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -1,0 +1,121 @@
+/*Custom Propierties*/
+:root{
+    /*Colores Primarios*/
+    --cyanOscuro: hsl(158, 36%, 37%);
+    --crema: hsl(30, 38%, 92%);
+
+    /*Colores Neutrales*/
+    --azulOscuro: hsl(212, 21%, 14%);
+    --azulClaro: hsl(228, 12%, 48%);
+    --blanco: hsl(0, 0%, 100%);
+    
+    /*Fuentes*/
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    --fuenteSecundaria: 'Fraunces', serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem equivalente a 10px*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.8rem;
+    background-color: var(--crema);
+    color: var(--azulClaro);
+}   
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+p{
+    line-height: 1.5;
+}
+h1{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+h2{
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: var(--azulOscuro);
+}
+img{
+    max-width: 100%;
+}
+.perfume{
+    background-color: var(--blanco);
+    margin: 5rem auto;
+    border-radius: 1rem;
+    min-width: 70%;
+}
+
+.perfume__imagen{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .perfume{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        width: 75%;
+    }     
+    .perfume__imagen{
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+
+.perfume__contenido{
+    padding: 2rem;
+}
+.lg{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--cyanOscuro);
+    font-family: var(--fuenteSecundaria);
+}
+.sm{
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.perfume__descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.perfume__descripcion p{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.perfume__boton{
+    background-color: var(--cyanOscuro);
+    text-align: center;
+    height: 6rem;
+}
+.perfume__boton:hover{
+   cursor: pointer;
+}
+.perfume__submit{
+    background-color: var(--cyanOscuro);
+    border: 0;
+    align-content: center;
+    margin: 2rem auto;
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
